@@ -26,8 +26,13 @@ python preprocess_feature.py
 ```
 
 ## Build model
+You can start training model simply by executing the following bash file: 
+```
+sh bash.sh
+```
+which will train 20 different models with different feature combinations.
 
-Refer to `./master`
+You can also refer to `./master` and run `python main.py -h`
 
 ```
 usage: main.py [-h] [-f FEATURES [FEATURES ...]]
@@ -53,7 +58,7 @@ optional arguments:
 
 this will generate results, save in a new folder `./results`
 
-## performance
+## Performance
 ```
 demo_results.ipynb
 ```
