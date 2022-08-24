@@ -1,26 +1,59 @@
 # DrugComb Cross dataset prediction model
+Cross-study prediction of drug combination treatment response
 
-# dataset:
-    * summary.csv: combination response; training set
-    * concentration: dose-response curve of all samples. 
-    * cancer_genes.tsv #TODO: find reference
-    * drug.csv: chemical structure
-    * drug_target.csv: # find reference; update this
-    * cell_line.csv: cell line information
-    * source.csv: which study/assay used
-    * disease.csv: disease_id annotation in cell_line.csv
-    * tissue.csv: tissue_id annotation in cell_line.csv
+for the dataset used in this study, please refer to [DrugComb](https://drugcomb.fimm.fi/)
+## Dependencies
+
+* [python](https://www.python.org)(3.6.5)
+* [LightGBM 2.3.2](https://lightgbm.readthedocs.io/en/latest/index.html)
 
 
+## QC
 
-# pipeline:
-    * QC.ipynb
-    * split_train_test.py
-    * preprocess_feature.py
-    * bash.sh
-    * demo_results.ipynb 
+```
+QC.ipynb
+```
 
-running:
-bash 1 2 3 4 5
-# DrugComb-cross-study-combination-prediction
-# DrugComb-cross-study-prediction
+## Split training and test set by study name
+
+```
+python split_train_test.py
+```
+## Construct feature set
+
+```
+python preprocess_feature.py
+```
+
+## Build model
+
+Refer to `./master`
+
+```
+usage: main.py [-h] [-f FEATURES [FEATURES ...]]
+
+Build Drugcomb drug combination prediction machine learning models across studies.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FEATURES [FEATURES ...], --features FEATURES [FEATURES ...]
+                         Features selected for model, including:
+                                drug_categorical;
+                                cell_line_categorical;
+                                cancer_gene_expression;
+                                chemical_structure;
+                                monotherapy_ri;
+                                monotherapy_ic50;
+                                drc_baseline;
+                                drc_intp_linear;
+                                drc_intp_lagrange;
+                                drc_intp_4PL;
+                                (default = ['drug_categorical', 'cell_line_categorical']
+```
+
+this will generate results, save in a new folder `./results`
+
+## performance
+```
+demo_results.ipynb
+```
