@@ -4,8 +4,8 @@ Cross-study prediction of drug combination treatment response
 for the dataset used in this study, please refer to [DrugComb](https://drugcomb.fimm.fi/)
 ## Dependencies
 
-* [python](https://www.python.org)(3.6.5)
-* [LightGBM 2.3.2](https://lightgbm.readthedocs.io/en/latest/index.html)
+* [python (3.6.5)](https://www.python.org)
+* [LightGBM (2.3.2)](https://lightgbm.readthedocs.io/en/latest/index.html)
 
 
 ## QC
