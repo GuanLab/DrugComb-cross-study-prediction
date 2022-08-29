@@ -1,4 +1,5 @@
 # DrugComb Cross dataset prediction model
+![](https://github.com/GuanLab/DrugComb-cross-study-prediction/blob/main/Figure1-01.png)
 Cross-study prediction of drug combination treatment response
 
 for the dataset used in this study, please refer to [DrugComb](https://drugcomb.fimm.fi/)
