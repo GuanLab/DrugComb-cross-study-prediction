@@ -59,7 +59,10 @@ optional arguments:
 
 this will generate results, save in a new folder `./results`
 
-## Performance
+## Performance visualization
 ```
 demo_results.ipynb
 ```
+
+## Reference
+TBD
