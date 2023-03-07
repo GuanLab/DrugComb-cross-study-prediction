@@ -8,6 +8,10 @@ for the dataset used in this study, please refer to [DrugComb](https://drugcomb.
 * [python (3.6.5)](https://www.python.org)
 * [LightGBM (2.3.2)](https://lightgbm.readthedocs.io/en/latest/index.html)
 
+## Obtaining training dataset
+
+Download the drug combination screening dataset from [DrugComb](https://drugcomb.fimm.fi/) data portal: https://drugcomb.org/download/
+and put it under a new directory `./dataset`
 
 ## QC
 
