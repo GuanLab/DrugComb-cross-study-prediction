@@ -69,4 +69,5 @@ demo_results.ipynb
 ```
 
 ## Reference
-TBD
+Zhang, H., Wang, Z., Nan, Y. et al. Harmonizing across datasets to improve the transferability of drug combination prediction. Commun Biol 6, 397 (2023). https://doi.org/10.1038/s42003-023-04783-5
+
